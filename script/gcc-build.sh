@@ -10,7 +10,7 @@ wget -qO gcc.tar.gz "http://ftp.mirrorservice.org/sites/sourceware.org/pub/gcc/r
 tar -zxf gcc.tar.gz
 cd gcc-${version}
 ./configure --disable-multilib --enable-languages=c,c++
-make -j 4
+make -j$(nproc)
 make install
 
 # Configure
