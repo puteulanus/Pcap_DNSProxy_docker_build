@@ -10,7 +10,25 @@ RUN yum update -y
 RUN yum install wget tar -y
 
 # Build gcc
-RUN bash /tmp/script/gcc-build.sh
+RUN cd/tmp/script; bash ./gcc-build.sh
+
+# Build m4
+RUN cd/tmp/script; bash ./m4-build.sh
+
+# Build bison
+RUN cd/tmp/script; bash ./bison-build.sh
+
+# Build flex
+RUN cd/tmp/script; bash ./flex-build.sh
+
+# Build cmake
+RUN cd/tmp/script; bash ./cmake-build.sh
+
+# Build libpcap
+RUN cd/tmp/script; bash ./libpcap-build.sh
+
+# Build libsodium
+RUN cd/tmp/script; bash ./libsodium-build.sh
 
 # Expose Ports
 EXPOSE 53
