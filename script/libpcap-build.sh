@@ -8,7 +8,7 @@ wget -qO libpcap.tar.gz "http://www.tcpdump.org/release/libpcap-${libpcap_versio
 tar -zxf libpcap.tar.gz
 cd libpcap-${libpcap_version}
 ./configure
-make -j$(nproc)
+make -j$(nproc) >/dev/null
 make install
 
 # Configure

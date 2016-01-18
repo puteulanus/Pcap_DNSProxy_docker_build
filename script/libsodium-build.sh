@@ -11,7 +11,7 @@ tar -zxf libsodium.tar.gz
 cd libsodium-${libsodium_version}
 ./autogen.sh
 ./configure
-make -j$(nproc)
+make -j$(nproc) >/dev/null
 make install
 
 # Configure

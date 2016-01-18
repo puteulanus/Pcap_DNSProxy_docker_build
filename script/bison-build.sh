@@ -8,7 +8,7 @@ wget -qO bison.tar.gz "http://ftp.gnu.org/gnu/bison/bison-${bison_version}.tar.g
 tar -zxf bison.tar.gz
 cd bison-${bison_version}
 ./configure --prefix=/usr/local/bison --with-libiconv-prefix=/usr/local/libiconv/
-make -j$(nproc)
+make -j$(nproc) >/dev/null
 make install
 
 # Configure

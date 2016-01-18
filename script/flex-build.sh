@@ -8,7 +8,7 @@ wget -qO flex.tar.gz "http://netix.dl.sourceforge.net/project/flex/flex-${flex_v
 tar -zxf flex.tar.gz
 cd flex-${flex_version}
 ./configure --prefix=/usr/local/flex
-make -j$(nproc)
+make -j$(nproc) >/dev/null
 make install
 
 # Configure
