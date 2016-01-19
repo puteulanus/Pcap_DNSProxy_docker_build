@@ -7,7 +7,7 @@ ADD script /tmp/script
 RUN yum update -y
 
 # Install tools
-RUN yum install wget tar -y
+RUN yum install wget tar file -y
 
 # Build gcc
 RUN cd /tmp/script; bash ./gcc-build.sh
