@@ -3,6 +3,8 @@
 source versions.sh
 
 # Install
+yum install -y byacc
+
 cd /usr/src/
 wget -qO flex.tar.gz "http://netix.dl.sourceforge.net/project/flex/flex-${flex_version}.tar.gz"
 tar -zxf flex.tar.gz
