@@ -12,3 +12,5 @@ make -j$(nproc) >/dev/null
 make install
 
 # Configure
+ln -s /usr/local/bison/bin/bison /usr/bin/bison
+ln -s /usr/local/bison/bin/yacc /usr/bin/yacc
