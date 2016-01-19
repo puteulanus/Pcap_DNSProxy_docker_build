@@ -30,6 +30,9 @@ RUN cd /tmp/script; bash ./libpcap-build.sh
 # Build libsodium
 RUN cd /tmp/script; bash ./libsodium-build.sh
 
+# Build Pcap_DNSProxy
+RUN cd /tmp/script; bash ./pcap_dnsproxy-build.sh
+
 # Expose Ports
 EXPOSE 53
 
