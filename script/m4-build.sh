@@ -12,3 +12,5 @@ make -j$(nproc) >/dev/null
 make install
 
 # Configure
+
+ln -s /usr/local/m4/bin/m4 /usr/bin/m4
